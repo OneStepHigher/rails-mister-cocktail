@@ -5,3 +5,9 @@
 <% @cocktails.each do |cock| %>
   <li> <%= link_to cock.name, cocktail_path(cock) %> </li>
 <% end %>
+
+<%= cl_image_tag("lrqc84t3btif8w06fvec",
+      width: 400, height: 300, crop: :fill) %>
+
+<%= cl_image_tag("IMAGE_WITH_FACE_ID",
+      width: 150, height: 150, crop: :thumb, gravity: :face) %>
